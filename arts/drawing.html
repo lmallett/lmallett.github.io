@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>LMallett - Home</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/css/styles.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+    <script>
+        $.get("/nav.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
+
+    <div class="container mt-5">
+        <p class="display-6">Drawing & Animation</p>
+
+        <p>
+            I've always loved to draw. I began truly developing my skills starting at around 10 years old.
+            Aside from a single basic design course in high school, I'm entirely self-taught.
+            I primarily consider myself a digital artist, specializing in character art and comic layout.
+            I'm familiar with several professional art tools, including Clip Studio Paint, Paint Tool SAI, Toon Boom
+            Harmony, and Medibang.
+        </p>
+        <p>
+            At the moment, I'm taking somewhat of a break from drawing and animating to focus on my work in physics.
+            However, there are several projects I look forward to resuming; most important to me is a comic series I am
+            planning.
+        </p>
+        <p class="display-7">Sample Gallery</p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="row">
+                    <a href="/assets/drawings/sketch_archeopteryx.png" data-toggle="lightbox"
+                        data-gallery="example-gallery" class="col-sm-4" data-caption="I'm sure that modern reconstructions of <em>Archaeopteryx</em> probably look
+                            quite different, rendering these sketches scientifically inaccurate, but I have a lot of affection
+                            for the 'retro' depictions of my favorite little theropod.">
+                        <img src="/assets/drawings/sketch_archeopteryx.png" class="img-fluid">
+                    </a>
+
+                    <a href="/assets/drawings/sketch_dragon.png" data-toggle="lightbox" data-gallery="example-gallery"
+                        class="col-sm-4" data-caption="Dragons are some of my favorite mythical creatures — one of the oldest drawings I still have is a skeletal structure diagram I did
+                            of one when I was maybe 8. Here's a more recent sketch, though, of a fluffy dragon :)">
+                        <img src="/assets/drawings/sketch_dragon.png" class="img-fluid">
+                    </a>
+
+                    <a href="/assets/drawings/sketch_stretch.png" data-toggle="lightbox" data-gallery="example-gallery"
+                        class="col-sm-4" data-caption="I'm a huge fan of drawing people with wings, and doing interesting poses. Here's a guy with wings
+                            stretching like a cat.">
+                        <img src="/assets/drawings/sketch_stretch.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="/assets/drawings/art_artemis callie apollo.png" data-toggle="lightbox"
+                        data-gallery="example-gallery" class="col-sm-4" data-caption="
+                        Whenever I write, I have to be picturing the characters. I wrote a short piece for a course and drew this to accompany it.
+                        ">
+                        <img src="/assets/drawings/art_artemis callie apollo.png" class="img-fluid">
+                    </a>
+
+                    <a href="/assets/drawings/art_raphael.png" data-toggle="lightbox" data-gallery="example-gallery"
+                        class="col-sm-4" data-caption="A character design reference for the comic series I mentioned.">
+                        <img src="/assets/drawings/art_raphael.png" class="img-fluid">
+                    </a>
+
+                    <a href="/assets/drawings/traditional_sparrows.png" data-toggle="lightbox"
+                        data-gallery="example-gallery" class="col-sm-4" data-caption="A pen-and-paper doodle of what I believe were intended to be barn swallows.">
+                        <img src="/assets/drawings/traditional_sparrows.png" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="row">
+                    <a href="/assets/drawings/anim_hades.gif" data-toggle="lightbox" data-gallery="example-gallery"
+                        class="col-sm-4" data-caption="I love the video game <em>Hades</em> — the game's artstyle inspired me to animate a little something.">
+                        <img src="/assets/drawings/anim_hades.gif" class="img-fluid">
+                    </a>
+
+                    <a href="/assets/drawings/anim_cat.gif" data-toggle="lightbox" data-gallery="example-gallery"
+                        class="col-sm-4" data-caption="This was something I made for a D&D campaign I DM'd for — the cat was a character in the game.
+                        The mirrored surface in the game was eerie because it flipped your reflection.">
+                        <img src="/assets/drawings/anim_cat.gif" class="img-fluid">
+                    </a>
+
+                    <a href="/assets/drawings/handhold.png" data-toggle="lightbox" data-gallery="example-gallery"
+                        class="col-sm-4" data-caption="Simple handholding study.">
+                        <img src="/assets/drawings/handhold.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="/js/scripts.js"></script>
+
+</body>
+
+</html>
