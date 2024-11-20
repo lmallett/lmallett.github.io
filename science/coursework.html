@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>LMallett - Home</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    </head>
+    <body>
+    
+        <div id="nav-placeholder"></div>
+        <script>
+            $.get("/nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script> 
+        <div class="container mt-5">
+
+        <p>
+        I think that anything can be interesting if you put in a little effort, so I try to learn at least a little bit about every new topic I encounter.
+        I value learning for the sake of learning, and I value optimism while I do it!
+        </p>
+        <p>
+        This means that I bring a broad set of interests and skills.
+        I have strong foundational skills in chemistry, biology, engineering, and computer science on top of my math and physics degree.
+        I also play Celtic harp, violin, viola, and piano; I am passionate about comic design, traditional animation, linguistics, and fiction writing;
+        I love to do ballroom dancing, snowboarding, and archery.
+        </p>
+        <p>
+        These interests often intersect in surprising ways. My knowledge of physics, linguistics, and music have all come in handy when I write fiction.
+        Conversely, my artistic skills have helped me when I communicate my scientific work, from poster design to producing useful, colorblind-friendly graphics.
+        </p>
+        <p>
+        I am passionate about scientific communication, not only to the public, but to fellow scientists in unrelated fields.
+        This is why interdisciplinary knowledge is particularly important to me: it means that I can communicate with others using their own language.                 
+        </p>
+
+        <!-- https://stackoverflow.com/questions/31362883/correctly-create-bootstrap-accordion-in-html-table -->
+        <table class="table table-condensed" style="border-collapse:collapse;">
+            <th>
+                <div class = "display-7">Coursework</div>
+            </th>
+            <tbody>
+                <tr data-toggle="collapse" data-target="#physcourses" class="accordion-toggle" colspan="6"><td class><b>Physics & Astronomy</b></td></tr>
+                <tr><td colspan="6" class="hiddenRow">
+                    <div id="physcourses" class=" accordian-body collapse" >            
+                    <table class="table table-striped"> 
+                        <tr><td>PHYS 024 </td><td> Mechanics and Wave Motion</td></tr>
+                        <tr><td>PHYS 111 </td><td>Theoretical Mechanics</td></tr>
+                        <tr><td>PHYS 051 </td><td>Electromagnetic Theory and Optics</td></tr>
+                        <tr><td>PHYS 151 </td><td>Electromagnetic Fields</td></tr>
+                        <tr><td>PHYS 052 </td><td>Quantum Physics</td></tr>
+                        <tr><td>PHYS 116 </td><td>Quantum Mechanics</td></tr>
+                        <tr><td>PHYS 117 </td><td>Statistical Mechanics & Thermodynamics</td></tr>
+                        <tr><td>PHYS 023 </td><td>Special Relativity</td></tr>
+                        <tr><td>PHYS 172 </td><td>General Relativity & Cosmology</td></tr>
+                        <tr><td>ASTR 062 </td><td>Introduction to Astrophysics</td></tr>
+                        <tr><td>ASTR 128 </td><td>Planetary Dynamics & Earth Climate History</td></tr>
+                        <tr><td>GEOL 189D</td><td> Meteorites & Solar System Evolution</td></tr>
+                        <tr><td>PHYS 050 </td><td>Physics Laboratory</td></tr>
+                        <tr><td>PHYS 054 </td><td>Modern Physics Laboratory</td></tr>
+                        <tr><td>PHYS 133 </td><td>Electronics Laboratory</td></tr>
+                        <tr><td>PHYS 134 </td><td>Optics Laboratory</td></tr>
+                        <tr><td>PHYS 195 </td><td>Physics Colloquium</td></tr>
+                    </table> 
+                    </div>
+                </td></tr>
+
+                <tr data-toggle="collapse" data-target="#mathcourses" class="accordion-toggle" colspan="6"><td><b>Mathematics</b></td></tr>
+                <tr><td colspan="6" class="hiddenRow">
+                    <div id="mathcourses" class="accordian-body collapse">
+                    <table class="table table-striped">
+                        <tr><td>MATH 019</td><td>Single & Multivariable Calculus</td><td>Standard calculus I, II, III in one course.</td></tr>
+                        <tr><td>MATH 073 </td><td> Linear Algebra</td><td>Proof-based linear algebra course.</td></tr>
+                        <tr><td>MATH 055 </td><td> Discrete Mathematics</td><td>Combinatorics, number theory, and graph theory.</td></tr>
+                        <tr><td>MATH 082 </td><td> Differential Equations</td><td>1st, 2cd-order ODEs, bifurcations, systems, matrix exponentials, equilibrium points, stability.</td></tr>
+                        <tr><td>MATH 180 </td><td>Partial Differential Equations</td><td>Proof-based course in PDEs.</td></tr>
+                        <tr><td>MATH 157 </td><td>Intermediate Probability & Statistics</td><td></td></tr>
+                        <tr><td>MATH 171 </td><td>Abstract Algebra I: Groups & Rings</td><td></td></tr>
+                        <tr><td>MATH 131 </td><td>Mathematical Analysis I</td><td></td></tr>
+                        <tr><td>MATH 148 </td><td> Knot Theory</td><td></td></tr>
+                        <tr><td>MATH 195 </td><td> Undergraduate Mathematics Forum</td><td>Public speaking course in mathematics.</td></tr>
+                        <tr><td>MATH 199 </td><td> Mathematics Colloquium</td><td></td></tr>
+                      </table> 
+                    </div>
+                </td></tr>
+
+                <tr data-toggle="collapse" data-target="#cscourses" class="accordion-toggle" colspan = "6"><td><b>Computer Science</b></td></tr>
+                <tr><td colspan="6"  class="hiddenRow">
+                    <div id="cscourses" class="accordian-body collapse">
+                    <table class="table table-striped">
+                        <tr><td>CSCI 005 </td><td>Introduction to Computer Science </td></tr>
+                        <tr><td>CSCI 060 </td><td>Principles of Computer Science</td></tr>
+                        <tr><td>MATH 164 </td><td> Scientific Computing </td></tr>
+                    </table>
+                    </div>
+                </td></tr>
+
+                <tr data-toggle="collapse" data-target="#otherscicourses" class="accordion-toggle" colspan = "6"><td><b>Other Sciences</b></td></tr>
+                <tr><td colspan="6"  class="hiddenRow">
+                    <div id="otherscicourses" class="accordian-body collapse">
+                    <table class = "table table-striped">
+                        <tr><td>CHEM 023A </td><td>Chemistry in the Modern World I</td></tr>
+                        <tr><td>CHEM 023B </td><td>Chemistry in the Modern World II</td></tr>
+                        <tr><td>CHEM 024 </td><td> Chemistry Laboratory</td></tr>
+                        <tr><td>BIOL 052 </td><td> Introduction to Biology</td></tr>
+                        <tr><td>ENGR 079 </td><td> Engineering Systems (with practicum)</td></tr>
+                        <tr><td>GEOL 020E</td><td> Oceanography</td></tr>
+                    </table>
+                    </div>
+                </td></tr>
+  
+                <tr data-toggle="collapse" data-target="#humcourses" class="accordion-toggle" colspan = "6"><td><b>Humanities, Social Sciences, and Arts</b></td></tr>
+                <tr><td colspan="6"  class="hiddenRow">
+                    <div id="humcourses" class="accordian-body collapse">
+                    <table class = "table table-striped">
+                        <tr><td>WRIT 001</td><td>Introduction to Academic Writing - Children's Fiction</td></tr>
+                        <tr><td>HSA 010</td><td>Critical Inquiry - Star Trek & Social Theory</td></tr>
+                        <tr><td>CORE 179B</td><td>Climate Change in Context</td></tr> 
+                        <tr><td>LGCS 010</td><td>Introduction to Linguistics</td></tr>
+                        <tr><td>LGCS 101</td><td>Comparative / Historical Linguistics</td></tr>
+                        <tr><td>LGCS 105</td><td>Syntactic Analysis</td></tr>
+                        <tr><td>LGCS 120</td><td>Language Acquisition</td></tr>
+                        <tr><td>LGCS 131</td><td>Evolution of Language and Music</td></tr>
+                        <tr><td>LIT 035</td><td>Fiction Writing Workshop</td></tr>
+                        <tr><td>LIT 104</td><td>Introduction to Middle English Literature</td></tr>
+                        <tr><td>MUS 080</td><td>Music Theory I</td></tr>
+                    </table>
+                    </div>
+                </td></tr>
+                
+                <!-- <tr data-toggle="collapse" data-target="#otherscicourses" class="accordion-toggle" colspan = "6"><td><b>Other Sciences</b></td></tr>
+                <tr><td colspan="6"  class="hiddenRow">
+                    <div id="humcourses" class="accordian-body collapse">
+                    <table class = "table table-striped">
+                        <tr><td></td><td></td></tr>
+                    </table>
+                    </div>
+                </td></tr> -->
+            </tbody>
+        </table>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/js/scripts.js"></script>
+
+    </div>
+    </body>
+</html>

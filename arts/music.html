@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>LMallett - Home</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    </head>
+    <body>
+        <div id="nav-placeholder"></div>
+        <script>
+            $.get("/nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script> 
+
+        <div class="container mt-5">
+        <p class = "display-6">Music</p>
+        <hr/>
+        <p>
+            I play quite a few instruments, with varying levels of skill. Mostly, I enjoy playing music in the traditional Celtic style.
+        </p>
+        
+        <p class="display-7">Celtic/folk/"lever" harp</p>
+        <p>
+            This type of harp contrasts with orchestral harps, or "pedal" harps. I play a Triplett Axline nylon-strung harp.
+        </p>
+
+        <table class = "table table-striped">
+            <tr>
+                <td>"Elegy" by Kathy Bundock Moore</td>
+                <td><audio controls src="/assets/elegy_harp.wav"></audio></td>
+            </tr>
+            <tr>
+                <td>"Nocturne" by Nancy Glick</td>
+                <td><audio controls src="/assets/nocturne_harp.wav"></audio></td>
+            </tr>
+        </table>
+
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/js/scripts.js"></script>
+        </div>
+    </body>
+</html>

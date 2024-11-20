@@ -1,50 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- <html lang="en" data-bs-theme="dark"> -->
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Bare - Start Bootstrap Template</title>
+        <title>LMallett - Home</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="/css/styles.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+        <!-- for dark mode -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
     </head>
     <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
+        <div id="nav-placeholder"></div>
+        <script>
+            $.get("/nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script> 
+
         <!-- Page content-->
-        <div class="container">
-            <div class="text-center mt-5">
-                <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead">A complete project boilerplate built with Bootstrap</p>
-                <p>Bootstrap v5.2.3</p>
+
+        <div class="container mt-5">
+            <div class="row">
+
+                <!-- <div class="col-md-1"></div> -->
+
+                <div class="col-md-4">
+                    <img class="mx-auto d-block" src="assets/2024lucienmallettsmall.png" alt="Image of Lucien M."  width="360" height="360" sizes="(max-width: 640px) 100vw, (max-width: 767px) 50vw, 50vw">
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row">
+                    <p>
+                        <span class="display-6">Lucien Mallett (they/them/theirs)</span><br>
+                        <small>(LOO-see-en muh-LET; <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">IPA</a>: [ˈluːsiːɛn ˌməˈlɛt])</small><br>
+                    </p>
+                        
+
+                        <!-- <p>Hello!</p>
+                        <p>My name is Lucien Mallett. I am a recent graduate of <a href="https://www.hmc.edu/">Harvey Mudd College</a>, having earned my
+                            undergraduate degree in a Math and Physics joint major with a <a href="https://www.hmc.edu/hsa/program/">humanities concentration</a> in Linguistics.
+                        </p>
+
+                        <p>Currently, I am applying to graduate programs with the goal of earning a Ph.D. in solar physics.</p> -->
+
+                        <p>lucien.mallett@gmail.com</p>
+                        <p><a href="https://github.com/lmallett">Github</a></p>
+                        <p><a href="https://www.linkedin.com/in/lucienmallett31415/">LinkedIn</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-1"></div>
             </div>
-        </div>
+
+            <hr class="section-heading-spacer">
+
+            <p class="display-6">Hello!</p>
+            <p>My name is Lucien Mallett. I am a recent graduate of <a href="https://www.hmc.edu/">Harvey Mudd College</a>, having earned my
+                undergraduate degree in a Math and Physics joint major with a <a href="https://www.hmc.edu/hsa/program/">humanities concentration</a> in Linguistics.
+            </p>
+
+            <p>Currently, I am applying to graduate programs with the goal of earning a Ph.D. in solar physics.</p>
+
+            <p>
+            I think that anything can be interesting if you put in a little effort, so I try to learn at least a little bit about every new topic I encounter.
+            I value learning for the sake of learning, and I value optimism while I do it!
+            </p>
+            <p>
+            This means that I bring a broad set of interests and skills.
+            I have strong foundational skills in chemistry, biology, engineering, and computer science on top of my math and physics degree.
+            I also play Celtic harp, violin, viola, and piano; I am passionate about comic design, traditional animation, linguistics, and fiction writing;
+            I love to do ballroom dancing, snowboarding, and archery.
+            </p>
+            <p>
+            These interests often intersect in surprising ways. My knowledge of physics, linguistics, and music have all come in handy when I write fiction.
+            Conversely, my artistic skills have helped me when I communicate my scientific work, from poster design to producing useful, colorblind-friendly graphics.
+            </p>
+            <p>
+            I am passionate about scientific communication, not only to the public, but to fellow scientists in unrelated fields.
+            This is why interdisciplinary knowledge is particularly important to me: it means that I can communicate with others using their own language.                 
+            </p>
+            <!-- <h1>A Bootstrap 5 Starter Template</h1>
+            <p class="lead">A complete project boilerplate built with Bootstrap</p>
+            <p>Bootstrap v5.2.3</p> -->
+
+    </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="/js/scripts.js"></script>
     </body>
 </html>
