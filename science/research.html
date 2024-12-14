@@ -1,69 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>LMallett - Home</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="/css/styles.css" rel="stylesheet" />
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>LMallett - Home</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/css/styles.css" rel="stylesheet" />
 
-        <!-- fixes scrollbar -->
-        <div id="nav-placeholder"></div>
-        <script>
-            $.get("/nav.html", function(data){
-                $("#nav-placeholder").replaceWith(data);
-            });
-        </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 
-        <div class="container mt-5">
-        
-        <p class = "display-6">Research</p>
-        <hr/>
-        <p class = "display-7">Solar Physics</p>
+<body>
 
-        <p class = "display-7">Particle Cosmology</p>
+    <!-- fixes scrollbar -->
+    <div id="nav-placeholder"></div>
+    <script>
+        $.get("/nav.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
+
+    <div class="container mt-5">
+
+        <p class="display-6">Research</p>
+        <hr />
+        <p class="display-7">Solar Physics</p>
+
+        <div class="clearfix">
+            <div class="col-md-5 float-md-end mb-3 ms-md-5">
+                <embed src="/assets/solar_research.pdf" width="100%" height="375" type="application/pdf">
+                <p class="text-center">Most recent poster, presented at the Coronal Loops Workshop in Tenerife, Spain in 2024.</p>
+            </div>
+            <p>
+                In the summer of 2023, I attended the University of Alabama in Huntsville and NASA MSFC Heliophysics
+                REU, where
+                I joined a project with Dr. Amy Winebarger and <a href="https://athrayspanchap.github.io/">Dr. P.S.
+                    Athiray</a>.
+            </p>
+            <p>
+                This project concerns <em>differential emission measure (DEM) inversion</em>. DEM inversion is a
+                technique used to
+                derive thermal distributions of plasma along line-of-sight using images of the Sun in multiple
+                wavelengths.
+            </p>
+            <p>
+                Specifically, the project concerns areas of the Sun where DEM inversion fails. It turns out that DEM inversion
+                consistently has no solution at the tops of loops during and after solar flares.
+            </p>
+        </div>
+
+        <p class="display-7">Particle Cosmology</p>
 
         <div class="clearfix">
             <!-- <img src="" class="col-md-6 float-md-end mb-3 ms-md-3" alt="..."> -->
             <div class="col-md-5 float-md-end mb-3 ms-md-5">
-            <embed src="/assets/shuve_research.pdf" width="100%" height="375" type="application/pdf">
-            <p class = "text-center">Poster presented to Harvey Mudd College student research symposium.</p>
+                <embed src="/assets/shuve_research.pdf" width="100%" height="375" type="application/pdf">
+                <p class="text-center">Poster presented to Harvey Mudd College student research symposium.</p>
             </div>
             <p>
-                I worked with professor <a href="https://brianshuvephysics.com/">Brian Shuve</a> at Harvey Mudd College from the fall of 2021 through the summer of 2022.
+                I worked with professor <a href="https://brianshuvephysics.com/">Brian Shuve</a> at Harvey Mudd College
+                from the fall of 2021 through the summer of 2022.
                 Over the school year, this was for credit; during the summer it became a full-time paid position.
-                </p>
-                <p>
-                This project developed a model to explain matter-antimatter asymmetry and the neutrino mass problem simultaneously via the introduction of a scalar boson and sterile neutrinos.
+            </p>
+            <p>
+                This project developed a model to explain matter-antimatter asymmetry and the neutrino mass problem
+                simultaneously via the introduction of a scalar boson and sterile neutrinos.
                 Prof. Shuve goes further in-depth <a href="https://brianshuvephysics.com/research-1#baryo-new">here</a>.
-                </p>
-                <p>My main tasks for the project were:</p>
-                <ul>
-                    <li>implementing a set of coupled partial differential equations in Mathematica, and numerically solving them to investigate if the model could
-                        reproduce observed values for matter-antimatter asymmetry in the Universe, and
-                    </li>
-                    <li>comparing this implementation to two other implementations of the same problem, and correcting errors in all three. This involved in-depth debugging,
-                        as well as deriving equations using careful calculus and linear algebra.
-                    </li>
-                </ul>
-                <p>This work is related to <a href="https://arxiv.org/abs/1704.01979">arXiv:1704.01979</a>.
-                    Though ultimately the model I worked with did not produce fruitful results, I gained valuable skills throughout the experience.</p>
-                
-          </div>
-        </div>
+            </p>
+            <p>My main tasks for the project were:</p>
+            <ul>
+                <li>implementing a set of coupled partial differential equations in Mathematica, and numerically solving
+                    them to investigate if the model could
+                    reproduce observed values for matter-antimatter asymmetry in the Universe, and
+                </li>
+                <li>comparing this implementation to two other implementations of the same problem, and correcting
+                    errors in all three. This involved in-depth debugging,
+                    as well as deriving equations using careful calculus and linear algebra.
+                </li>
+            </ul>
+            <p>This work is related to <a href="https://arxiv.org/abs/1704.01979">arXiv:1704.01979</a>.
+                Though ultimately the model I worked with did not produce fruitful results, I gained valuable skills
+                throughout the experience.</p>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="/js/scripts.js"></script>
         </div>
-    </body>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="/js/scripts.js"></script>
+    </div>
+</body>
+
 </html>
