@@ -24,6 +24,9 @@
             $.get("/nav.html", function(data){
                 $("#nav-placeholder").replaceWith(data);
             });
+            $.get("/footer.html", function(data){
+            $("#footer-placeholder").replaceWith(data);
+        });
         </script> 
 
         <!-- Page content-->
@@ -98,4 +101,5 @@
         <!-- Core theme JS-->
         <script src="/js/scripts.js"></script>
     </body>
+    <div id="footer-placeholder"></div>
 </html>

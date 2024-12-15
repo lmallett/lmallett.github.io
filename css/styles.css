@@ -101,6 +101,45 @@ a[rel*="external"]::after {
 /* a:visited {color:#0000ff;} */
 /* a:hover {color:#ffcc00;} */
 
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 100px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: var(--bs-gray-900);
+}
+
+/*-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 150px;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+/* \ */
+
+
+
 .hiddenRow {
   padding: 0 !important;
 }

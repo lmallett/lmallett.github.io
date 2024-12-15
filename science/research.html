@@ -23,6 +23,9 @@
         $.get("/nav.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
         });
+        $.get("/footer.html", function (data) {
+            $("#footer-placeholder").replaceWith(data);
+        });
     </script>
 
     <div class="container mt-5">
@@ -34,7 +37,13 @@
         <div class="clearfix">
             <div class="col-md-5 float-md-end mb-3 ms-md-5">
                 <embed src="/assets/poster_dem_inversion.pdf" width="100%" height="375" type="application/pdf">
-                <p class="text-center">Most recent poster, presented at the Coronal Loops Workshop in Tenerife, Spain in 2024.</p>
+                <p class="text-center">Most recent poster, presented at the Coronal Loops Workshop in Tenerife, Spain in 2024.
+                    <a href="/assets/poster_dem_inversion.pdf" target="_blank">Click here to open it in a new tab.</a>
+                </p>
+                <embed src="/assets/Mallett Senior Thesis.pdf" width="100%" height="375" type="application/pdf">
+                    <p class="text-center">My undergraduate thesis on the topic.
+                        <a href="/assets/Mallett Senior Thesis.pdf" target="_blank">Click here to open it in a new tab.</a>
+                    </p>        
             </div>
             <p>
                 In the summer of 2023, I attended the University of Alabama in Huntsville and NASA MSFC Heliophysics
@@ -48,10 +57,31 @@
                 derive thermal distributions of plasma along line-of-sight using images of the Sun in multiple
                 wavelengths.
             </p>
+
             <p>
                 Specifically, the project concerns areas of the Sun where DEM inversion fails. It turns out that DEM inversion
                 consistently has no solution at the tops of loops during and after solar flares.
             </p>
+
+            <p>Here are some related links and citations:</p>
+            <ul>
+                <li><a href="https://ui.adsabs.harvard.edu/abs/2023AGUFMSH11F2678M/abstract">
+                    Harvard ADS link regarding its poster at AGU 2023.</a></li>
+                
+                <li><a href="https://meetings.iac.es/clw11/pages/program.php">
+                    Link to program notes at the 11th Coronal Loops Workshop in Tenerife, Spain,
+                    where I presented the poster.
+                </a></li>
+
+                <li><a href="/assets/Mallett Senior Thesis.pdf" target="_blank">Link to my senior thesis, which can also be seen at right.</a></li>
+
+                <li><a href="https://ui.adsabs.harvard.edu/abs/2023AGUFMED23B..02M/abstract">
+                    Harvard ADS link regarding its presentation at an oral session at AGU 2023.
+                </a>
+                The session challenged researchers to present their research using only the top 1000 words in the English language.</li>
+            </ul>
+
+            <p>Currently, the associated paper is in progress, and should be submitted to ApJ in early 2025.</p>
         </div>
 
         <p class="display-7">Particle Cosmology</p>
@@ -60,7 +90,9 @@
             <!-- <img src="" class="col-md-6 float-md-end mb-3 ms-md-3" alt="..."> -->
             <div class="col-md-5 float-md-end mb-3 ms-md-5">
                 <embed src="/assets/poster_shuve_research.pdf" width="100%" height="375" type="application/pdf">
-                <p class="text-center">Poster presented to Harvey Mudd College student research symposium.</p>
+                <p class="text-center">Poster presented to Harvey Mudd College student research symposium.
+                    <a href="/assets/poster_shuve_research.pdf" target="_blank">Click here to open it in a new tab.</a>
+                </p>
             </div>
             <p>
                 I worked with professor <a href="https://brianshuvephysics.com/">Brian Shuve</a> at Harvey Mudd College
@@ -87,6 +119,8 @@
                 Though ultimately the model I worked with did not produce fruitful results, I gained valuable skills
                 throughout the experience.</p>
 
+            <a href="https://ui.adsabs.harvard.edu/abs/2023APS..APRC16004S/abstract">Citation here.</a>
+
         </div>
     </div>
 
@@ -95,6 +129,8 @@
     <!-- Core theme JS-->
     <script src="/js/scripts.js"></script>
     </div>
+    <div id="footer-placeholder"></div>
+
 </body>
 
 </html>

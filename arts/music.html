@@ -16,10 +16,13 @@
     <body>
         <div id="nav-placeholder"></div>
         <script>
-            $.get("/nav.html", function(data){
+            $.get("/nav.html", function (data) {
                 $("#nav-placeholder").replaceWith(data);
             });
-        </script> 
+            $.get("/footer.html", function (data) {
+                $("#footer-placeholder").replaceWith(data);
+            });
+        </script>
 
         <div class="container mt-5">
         <p class = "display-6">Music</p>
@@ -52,5 +55,8 @@
         <!-- Core theme JS-->
         <script src="/js/scripts.js"></script>
         </div>
+
+        <div id="footer-placeholder"></div>
+
     </body>
 </html>

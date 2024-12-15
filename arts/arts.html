@@ -17,10 +17,14 @@
 
         <div id="nav-placeholder"></div>
         <script>
-            $.get("/nav.html", function(data){
+            $.get("/nav.html", function (data) {
                 $("#nav-placeholder").replaceWith(data);
             });
-        </script> 
+            $.get("/footer.html", function (data) {
+                $("#footer-placeholder").replaceWith(data);
+            });
+        </script>
+
 
         <div class="container mt-5">
         <p class = "display-6">Arts</p>
@@ -32,7 +36,6 @@
 
         </p>
 
-
         </div>
 
         <!-- Bootstrap core JS-->
@@ -40,5 +43,7 @@
         <!-- Core theme JS-->
         <script src="/js/scripts.js"></script>
         </div>
+        <div id="footer-placeholder"></div>
+
     </body>
 </html>
